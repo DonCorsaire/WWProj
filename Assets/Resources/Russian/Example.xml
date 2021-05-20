@@ -1,0 +1,19 @@
+<dialogue name="Example">
+  <node id="0" npcText="Привет путник! Слышал новости? Ходят слухи, что на сайте null-code.ru есть довольно годный индусский код, для создания простенькой системы диалогов..." nextNode="0">
+    <answer text="Да, слышал." toNode="1" />
+    <answer text="Не понимаю, о чем речь. Что это вообще за сайт такой?" toNode="2" />
+    <answer text="Ты спятил? Я сваливаю отсюда!" dialogueInteract="Exit" />
+    <answer text="Поторгуем?" dialogueInteract="Trade" />
+    <answer text="Так о чем ты мне хочешь рассказать?" toNode="3" />
+  </node>
+  <node id="1" npcText="Таки и я о чем. Знатная хрень, зацени!" nextNode="0">
+    <answer text="Угу..." dialogueInteract="Exit" />
+  </node>
+  <node id="2" npcText="Ну как же так? Ресурс раздает халяву, разные мелочи и полезности там всякие. А недавно залили туда систему диалогов, Fallout нервно курит в сторонке!" nextNode="0">
+    <answer text="Ааа, и вправду..." toNode="1" />
+    <answer text="Мне пора идти." dialogueInteract="Exit" />
+    <answer text="[Сарказм]" dialogueInteract="Exit" />
+  </node>
+  <node id="3" npcText="Начнем с того, что я сперва скажу тебе первую реплику" nextNode="4" />
+  <node id="4" npcText="А после выдам тебе вторую реплику" nextNode="1" />
+</dialogue>
